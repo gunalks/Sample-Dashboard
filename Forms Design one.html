@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Design</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="form-container">
+    <h2>Basic Fields</h2>
+
+   <div id="form_0">
+
+    <div class="fields-section">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="name">Name</label>
+            </div>
+            <div class="col-9">
+              <input type="text" id="name" placeholder="Enter your name">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-9">
+              <input type="email" id="email" placeholder="Enter your email">
+            </div>
+          </div>
+
+            
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="col-9">
+              <input required="" type="tel" id="phone" placeholder="Enter your phone">
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="singleline">Singleline</label>
+            </div>
+            <div class="col-9">
+              <input type="text" id="singline" placeholder="text">
+            </div>
+          </div>
+            
+        </div>
+        <div class="col-md-4">
+         <div class="row">
+          <div class="col-3">
+            <label for="number">Number</label>
+          </div>
+          <div class="col-9">
+            <input type="number" id="number" placeholder="Number">
+          </div>
+         </div>
+            
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="address">Address</label>
+            </div>
+            <div class="col-9">
+              <textarea id="address" placeholder="Enter your address"></textarea>
+            </div>
+          </div>
+
+            
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="time">Time</label>
+            </div>
+            <div class="col-9">
+              <input type="time" id="time" placeholder="">
+            </div>
+          </div>
+            
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="date">Date</label>
+            </div>
+            <div class="col-9">
+              <input type="date" id="date" placeholder="">
+            </div>
+          </div>
+            
+        </div>
+
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="dropdown">Dropdown</label>
+            </div>
+            <div class="col-9">
+              <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+          </div>
+            
+        </div>
+      </div> 
+      
+      <div class="row mt-5">
+
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="datetime">Date Time</label>
+            </div>
+            <div class="col-9">
+              <input type="datetime-local" id="datetime"  placeholder="">
+            </div>
+          </div>
+            
+        </div>
+
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="Decimal">Decimal</label>
+            </div>
+            <div class="col-9">
+              <input required="" type="number" step="0.01" class="input" placeholder="decimal" min="0">
+            </div>
+          </div>
+            
+        </div>
+
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="multiline">Multiline</label>
+            </div>
+            <div class="col-9">
+              <textarea id="multiline" placeholder="Enter text"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="row mt-5">
+
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label>Currency</label>
+            </div>
+            <div class="col-9">
+              <div class="input-group">
+                <span class="icon">$</span>
+                <input type="number" placeholder="Enter amount">
+            </div>
+            </div>
+          </div>
+            
+        </div>
+
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label>Percentage</label>
+            </div>
+            <div class="col-9">
+              <div class="input-group">
+                <span class="icon">%</span>
+                <input type="number" placeholder="Enter percentage">
+            </div>
+            </div>
+          </div>
+            
+        </div>
+
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-3">
+              <label for="url">URL</label>
+            </div>
+            <div class="col-9">
+              <input type="url" id="url" placeholder="Enter a URL">
+            </div>
+          </div>
+            <div class="file-upload-group">
+                
+               
+             </div>
+        </div>
+
+
+      </div>
+
+      <div class="row mt-5">
+        
+        <div class="col-md-4">
+            <div class="file-upload-wrapper">
+                <button>Image</button>
+                <input type="file" id="image-upload" accept="image/*">
+                <span></span> 
+                <span class="icon">🖼️</span>
+                
+              </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="file-upload-wrapper">
+                <button>Video</button>
+                <input type="file" id="video-upload" accept="video/*">
+                <span></span> 
+                <span class="icon">🎥</span>
+              </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="file-upload-wrapper">
+                <button>Audio</button>
+                <input type="file" id="audio-upload" accept="audio/*">
+                <span></span> 
+                <span class="icon">🎵</span>
+              </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-4">
+
+        <div class="col-md-4">
+            <div class="file-upload-wrapper">
+                <button>File</button>
+                <input type="file" id="file-upload" accept="file/*">
+                <span></span> 
+                <span class="icon">📁</span>
+              </div>
+        </div>
+
+    
+      </div>
+
+      
+      <div>
+        <label for="signature">Signature</label>
+        <textarea id="signature" placeholder="Enter signature"></textarea>
+      </div>
+     
+    
+      
+      
+    </div>
+
+
+   </div>
+
+    
+  </div>
+</body>
+<style>
+    body {
+      /* font-family: Arial, sans-serif; */
+      /* background-color: #9CB78F; */
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-container {
+      /* max-width: 900px; */
+      margin: 0 auto;
+      background: #f8f8f8;
+      color: #000000;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #form_0 h2 {
+      color: #424242;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    /* .fields-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    } */
+
+    #form_0 label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    #form_0 input,
+    #form_0 textarea{
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #form_0 select{
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #form_0 textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    #form_0 .checkbox-group,
+    #form_0 .radio-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #form_0 .checkbox-group label,
+    #form_0 .radio-group label {
+      font-weight: normal;
+    }
+
+    #form_0 .button {
+      text-align: center;
+    }
+
+    #form_0 .file-upload-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    /* Currency and persantage */
+
+    #form_0 .input-group {
+      position: relative;
+      display: flex;
+      align-items: center;
+      
+    }
+
+    #form_0 .input-group input {
+      /* width: 250px; */
+      padding: 10px 40px 10px 30px;
+      font-size: 16px;
+      /* border: 2px solid #ccc;
+      border-radius: 8px;
+      outline: none; */
+      transition: border-color 0.3s;
+    }
+
+    #form_0 .input-group input:focus {
+      border-color: #888;
+    }
+
+    #form_0 .input-group .icon {
+      position: absolute;
+      left: 10px;
+      font-size: 18px;
+      color: #666;
+    }
+
+    #form_0 .input-group .icon-currency {
+      content: "$";
+    }
+
+    #form_0 .input-group .icon-percentage {
+      content: "%";
+    }
+
+    #form_0 .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* File Upload */
+
+#form_0 .file-upload-wrapper {
+      position: relative;
+      /* width: 300px; */
+      display: flex;
+      align-items: center;
+      background-color: #70c8d7;
+      padding: 5px 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #form_0 .file-upload-wrapper input[type="file"] {
+      /* position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; */
+      /* opacity: 05; */
+      /* cursor: pointer; */
+      margin-left: -78px;
+      box-shadow: none;
+
+    }
+    ::-webkit-file-upload-button{
+      opacity: 0;
+     
+    }
+
+    #form_0 .file-upload-wrapper .icon {
+      font-size: 30px;
+      
+    }
+
+    #form_0 .file-upload-wrapper span {
+      flex-grow: 1;
+      font-size: 14px;
+      /* white-space: nowrap;
+      overflow: hidden; */
+      /* text-overflow: ellipsis; */
+      transition: color 0.3s;
+    }
+
+    #form_0 .file-upload-wrapper input[type="file"]:valid + span {
+      color: #4caf50; /* Change color when a file is selected */
+      font-weight: bold;
+      content: "File Selected"; /* Feedback for file selection */
+    }
+
+    #form_0 .file-upload-wrapper button {
+      background-color: #fff;
+      color: #222;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #form_0 .file-upload-wrapper button:hover {
+      background-color: #ddd;
+    }
+
+  </style>
+</html>

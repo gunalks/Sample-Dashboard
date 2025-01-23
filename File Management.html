@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <h3>File Management</h3>
+       
+        <div class="Page mt-2">
+            <div class="left">
+                    
+                <div class="Heading" style="display: flex; justify-content: space-between;">
+                    <h4 style="color: #fff;">My Files</h4>
+                    <button><i class="fa-solid fa-plus"></i> Add New</button>
+                </div>
+                       
+                <div class="Active">
+                    <div class="row Aver mt-2">
+                        <div class="col-md-3">
+                          <div class="card p-3" style=" border-radius: 8px; background-color: #2A2D3E;">
+                            <div class="d-flex justify-content-between">
+                                <div class="Itext" style="background-color:  #c7fdec;">
+                                    <i class="fa-solid fa-file" style="color: #00BE82;"></i>
+                                </div>
+                                <div class="ellip">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                               <div class="row">
+                                <div class="col">
+                                    <h2>Document</h2>
+                                    <div class="code mt-3" style="width: 100%; height: 5px; background-color: #acfde4; border-radius: 10px;">
+                                        <div class="code1" style="width: 70%;height: 5px; background-color: #00BE82;border-radius: 10px;"></div>
+                                    </div>
+                                    <div class="file mt-2" style="display: flex; justify-content: space-between;">
+                                        <h6>1,322 Files</h6>
+                                        <h6>1.3GB</h6>
+                                    </div>
+                                    
+                                </div>
+                              
+                               </div>
+                            </div>
+                        </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3" style=" border-radius: 8px; background-color: #2A2D3E;">
+                              <div class="d-flex justify-content-between">
+                                  <div class="Itext" style="background-color: #ffe3a5;">
+                                    <i class="fa-solid fa-cloud" style="color: #ffae00;"></i>
+                                  </div>
+                                  <div class="ellip">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                  </div>
+                              </div>
+                              <div class="mt-3">
+                                 <div class="row">
+                                  <div class="col">
+                                      <h2>One Drive</h2>
+                                      <div class="code mt-3" style="width: 100%; height: 5px; background-color: #ffde96; border-radius: 10px;">
+                                          <div class="code1" style="width: 30%;height: 5px; background-color: #ffae00; border-radius: 10px;"></div>
+                                      </div>
+                                      <div class="file mt-2" style="display: flex; justify-content: space-between;">
+                                          <h6>1,322 Files</h6>
+                                          <h6>1.3GB</h6>
+                                      </div>
+                                      
+                                  </div>
+                                
+                                 </div>
+                              </div>
+                          </div>
+  
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card p-3" style=" border-radius: 8px; background-color: #2A2D3E;">
+                              <div class="d-flex justify-content-between">
+                                  <div class="Itext" style="background-color: #b3e2ff;">
+                                    <i class="fa-brands fa-google-drive" style="color: #007ecd;"></i>
+                                  </div>
+                                  <div class="ellip">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                  </div>
+                              </div>
+                              <div class="mt-3">
+                                 <div class="row">
+                                  <div class="col">
+                                      <h2>Google Drive</h2>
+                                      <div class="code mt-3" style="width: 100%; height: 5px; background-color: #b3e2ff; border-radius: 10px;">
+                                          <div class="code1" style="width: 50%;height: 5px; background-color: #007ecd; border-radius: 10px;"></div>
+                                      </div>
+                                      <div class="file mt-2" style="display: flex; justify-content: space-between;">
+                                          <h6>1,322 Files</h6>
+                                          <h6>13GB</h6>
+                                      </div>
+                                      
+                                  </div>
+                                
+                                 </div>
+                              </div>
+                          </div>
+  
+                          </div>
+                          <div class="col-md-3">
+                            <div class="card p-3" style="border-radius: 8px; background-color: #2A2D3E;">
+                              <div class="d-flex justify-content-between">
+                                  <div class="Itext" style="background-color: #b4b3ff;">
+                                    <i class="fa-brands fa-dropbox" style="color: #4b2ca7;"></i>
+                                  </div>
+                                  <div class="ellip">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                  </div>
+                              </div>
+                              <div class="mt-3">
+                                 <div class="row">
+                                  <div class="col">
+                                      <h2>Dropbox</h2>
+                                      <div class="code mt-3" style="width: 100%; height: 5px; background-color: #b4b3ff; border-radius: 10px;">
+                                          <div class="code1" style="width: 85%;height: 5px; background-color: #4b2ca7; border-radius: 10px;"></div>
+                                      </div>
+                                      <div class="file mt-2" style="display: flex; justify-content: space-between;">
+                                          <h6>1,322 Files</h6>
+                                          <h6>1.3GB</h6>
+                                      </div>
+                                      
+                                  </div>
+                                
+                                 </div>
+                              </div>
+                          </div>
+  
+                          </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="Chart mt-2">
+
+                    <div class="row">
+                        <!-- Recent Files Section -->
+                        <div class="col-md-6">
+                            <div class="Recent mb-4 p-3" style="border-radius: 8px; background-color: #2A2D3E;">
+                                <div class="Recent-header d-flex justify-content-between align-items-center">
+                                    <h5 style="color: #ffffff;font-family: 'Playpen Sans', cursive;">Recent Files</h5>
+                                    <button class="btn" style="background-color: #47f3ff;font-family: 'Playpen Sans', cursive;">See more</button>
+                                </div>
+                                <div class="Recent-body mt-2">
+                                    <table class="table table-dark table-striped table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>File Name</th>
+                                                <th>Date</th>
+                                                <th>Size</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="https://cdn-icons-png.flaticon.com/128/11040/11040084.png" alt="Xd File" width="24"> Xd File</td>
+                                                <td>01-03-2021</td>
+                                                <td>3.5mb</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma File" width="24"> Figma File</td>
+                                                <td>27-02-2021</td>
+                                                <td>19mb</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://cdn-icons-png.flaticon.com/128/2991/2991108.png" alt="Documents" width="24"> Documents</td>
+                                                <td>23-02-2021</td>
+                                                <td>15mb</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://cdn-icons-png.flaticon.com/128/4725/4725489.png" alt="Sound File" width="24"> Sound File</td>
+                                                <td>21-02-2021</td>
+                                                <td>40mb</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://cdn-icons-png.flaticon.com/128/17524/17524829.png" alt="Media" width="24"> Media</td>
+                                                <td>23-02-2021</td>
+                                                <td>15mb</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://cdn-icons-png.flaticon.com/128/5968/5968377.png" alt="Sals PDF" width="24"> Adobe</td>
+                                                <td>21-02-2021</td>
+                                                <td>9mb</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://cdn-icons-png.flaticon.com/128/732/732220.png" alt="Excel File" width="24"> Excel File</td>
+                                                <td>23-02-2021</td>
+                                                <td>11mb</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Analytics Section -->
+                        <div class="col-md-6">
+                            <div class="Analys mb-4 text-white p-3" style="border-radius: 8px; background-color: #2A2D3E; height: 425px;">
+                                <div class="Analys-header">
+                                    <h5 style="font-family: 'Playpen Sans', cursive;">Analytics</h5>
+                                    
+                                </div>
+                                <div class="Analys-body">
+
+                                    <div class="Achart d-flex">
+                                        <div class="col">
+                                          <div class="d-flex one justify-content-center align-items-end">
+                                            <!-- Saturday Bars -->
+                                            <div class="bar bar-client"></div>
+                                            <div class="bar bar-designer"></div>
+                                          </div>
+                                        <div class="day-label" style="font-family: 'Playpen Sans', cursive;">Sat</div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="d-flex one justify-content-center align-items-end">
+                                            <!-- Sunday Bars -->
+                                            <div class="bar bar-client1"></div>
+                                            <div class="bar bar-designer1"></div>
+                                          </div>
+                                        <div class="day-label" style="font-family: 'Playpen Sans', cursive;">Sun</div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="d-flex one justify-content-center align-items-end">
+                                            <!-- Monday Bars -->
+                                            <div class="bar bar-client2"></div>
+                                            <div class="bar bar-designer2"></div>
+                                          </div>
+                                        <div class="day-label" style="font-family: 'Playpen Sans', cursive;">Mon</div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="d-flex one justify-content-center align-items-end">
+                                            <!-- Tuesday Bars -->
+                                            <div class="bar bar-client3"></div>
+                                            <div class="bar bar-designer3"></div>
+                                          </div>
+                                        <div class="day-label" style="font-family: 'Playpen Sans', cursive;">Tue</div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="d-flex one justify-content-center align-items-end">
+                                            <!-- Wednesday Bars -->
+                                            <div class="bar bar-client4"></div>
+                                            <div class="bar bar-designer4"></div>
+                                          </div>
+                                        <div class="day-label" style="font-family: 'Playpen Sans', cursive;">Wed</div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="d-flex one justify-content-center align-items-end">
+                                            <!-- Thursday Bars -->
+                                            <div class="bar bar-client5"></div>
+                                            <div class="bar bar-designer5"></div>
+                                          </div>
+                                        <div class="day-label" style="font-family: 'Playpen Sans', cursive;">Thu</div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="d-flex one justify-content-center align-items-end">
+                                            <!-- Friday Bars -->
+                                            <div class="bar bar-client6"></div>
+                                            <div class="bar bar-designer6"></div>
+                                          </div>
+                                        <div class="day-label" style="font-family: 'Playpen Sans', cursive;">Fri</div>
+                                        </div>
+                                      </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                
+              
+              
+
+              </div>
+
+            </div>
+           
+            
+
+        </div>
+    
+
+    </div>
+    
+</body>
+<style>
+    .container-fluid{
+        background-color: #212332;
+        /* font-family: 'Playpen Sans', cursive; */
+        
+        font-family: "SF Pro Display-Medium", Helvetica;
+    }
+
+    h3{
+    text-decoration:underline;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playpen Sans', cursive;
+    }
+    h2{
+        color: #fff;
+        font-family: 'Playpen Sans', cursive;
+    }
+    h6{
+        color: #fff;
+        font-family:'Playpen Sans', cursive;
+    }
+  button{
+    padding: 5px 15px;
+    background-color: #33c5ff;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+  }
+  button i{
+    font-size: 16px;
+  }
+   
+   .one{
+    height: 200px;
+   }
+
+   .A2{
+    display: flex;
+    justify-content: space-between;
+ }
+ .Design{
+  display: flex;
+  
+ }
+ .Achart{
+    margin-top: 110px;
+ }
+ .Design p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -5px;
+ }
+.dot2 {
+  height: 15px;
+  width: 15px;
+  background-color: #335aff;
+  border-radius: 50%;
+  
+}
+.dot1 {
+  height: 15px;
+  width: 15px;
+  background-color: #FE7831;
+  border-radius: 50%; 
+}
+   .card h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 0;
+    color: gray;
+    text-wrap: nowrap;
+}
+.Itext{
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.table thead tbody{
+    font-family: 'Playpen Sans', cursive;
+}
+.Itext i{
+  font-size: 20px;
+  color: #ff5353;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ellip i{
+  font-size: 20px;
+  color: #fff;
+}
+p span .dot{
+  width: 100px;
+  height: 100px;
+  background-color: #FE7831;
+}
+
+.bar {
+  width: 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+.bar-client {
+  background-color: #FE7831;
+  height: 180px;
+}
+.bar-designer {
+  background-color: #5177ff;
+  height: 250px;
+}
+.bar-client1 {
+  background-color: #FE7831;
+  height: 150px;
+}
+.bar-designer1 {
+  background-color: #5177ff;
+  height: 280px;
+}
+.bar-client2 {
+  background-color: #fe7831;
+  height: 190px;
+}
+.bar-designer2 {
+  background-color: #5177ff;
+  height: 100px;
+}
+.bar-client3 {
+  background-color: #fe7831;
+  height: 210px;
+}
+.bar-designer3 {
+  background-color: #5177ff;
+  height: 150px;
+}
+.bar-client4 {
+  background-color: #fe7831;
+  height: 300px;
+}
+.bar-designer4 {
+  background-color: #5177ff;
+  height: 180px;
+}
+.bar-client5 {
+  background-color: #fe7831;
+  height: 150px;
+}
+.bar-designer5 {
+  background-color: #5177ff;
+  height: 220px;
+}
+.bar-client6 {
+  background-color: #fe7831;
+  height: 200px;
+}
+.bar-designer6 {
+  background-color: #5177ff;
+  height: 150px;
+}
+.day-label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #888;
+  text-align: center;
+}
+
+  
+
+@media screen and (max-width:600px) {
+ .left, .right{
+  width: 100%;
+ }
+ .Chart{
+  flex-direction: row;
+ 
+ }
+ .Achart{
+    margin-top: 30px;
+ }
+ .one{
+  height: 300px;
+ }
+ .Aver{
+  gap: 10px;
+ }
+ 
+
+}
+
+</style>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Collapse Accordion</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid mt-2">
+        <div class="accordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+                <input type="checkbox" id="item1">
+                <label class="accordion-header" for="item1">
+                    <img src="https://img.freepik.com/free-photo/close-up-excited-person-portrait_23-2151186651.jpg?t=st=1724390953~exp=1724394553~hmac=81d76a43f998cd8cabdcc82cefcde4d3b4831109c434e2f7f5835a24eb8d9ad0&w=360" alt="User Image">
+                    <div class="Name">
+                        <h5>Jessica</h5>
+                        <span>Mon, Aug 19, 11:05 AM (4 days ago)</span>
+                    </div>
+                    <div class="reply">
+                        <i class="fa-solid fa-reply"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                       </div>
+                </label>
+                <div class="accordion-content">
+                    <p>Hai Good Morning.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sint quo ullam molestiae quaerat aspernatur, provident fugit sunt delectus distinctio tenetur odio, quis maxime? Quia quas minus perspiciatis asperiores provident.</p>
+                     <br>
+                     <div class="card">
+                     </div>
+                     <br>
+
+                    <div class="button">
+                        <button><i class="fa-solid fa-reply"></i> Reply</button>
+                        <button><i class="fa-solid fa-reply-all"></i> Reply all</button>
+                        <button><i class="fa-solid fa-share"></i> Forward</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+                <input type="checkbox" id="item2">
+                <label class="accordion-header" for="item2">
+                    <img src="https://img.freepik.com/free-photo/portrait-happy-smiley-man_23-2149022627.jpg?t=st=1724391165~exp=1724394765~hmac=493de4024ab23aca9cb4d39a6949fe3a1a6be49a64b16f1d24d929be4643faa0&w=740" alt="User Image">
+                    <div class="Name">
+                        <h5>Elan H</h5>
+                        <span>Mon, Aug 19, 11:33 AM (4 days ago)</span>
+                    </div>
+                   <div class="reply">
+                    <i class="fa-solid fa-reply"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                   </div>
+                    
+                </label>
+                <div class="accordion-content">
+                    <p>Hi Good afternon, </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nesciunt libero fuga, fugiat excepturi ullam modi, totam, sapiente odit voluptas facilis enim nulla. Aliquid nihil eligendi ducimus impedit incidunt quas?</p>
+                </div>
+            </div>
+        
+    
+        </div>
+    </div>
+
+</body>
+<style>
+    .container-fluid{
+        font-family: "Poppins", sans-serif;
+        
+    }
+    .card{
+        width: 200px;
+        height: 200px;
+        background-color: #000000;
+    }
+
+    .accordion {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        /* border-radius: 5px; */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-item {
+        border-bottom: 1px solid #ddd;
+        border: none;
+    }
+
+    .accordion-item:last-child {
+        border-bottom: none;
+    }
+
+    .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .accordion-header img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+
+    .accordion-header .Name {
+       flex-grow: 1;
+    }
+
+    .accordion-header h5 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .accordion-header span {
+        color: #888;
+        font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .accordion-content {
+        display: none;
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    input[type="checkbox"]:checked ~ .accordion-content {
+        display: block;
+    }
+
+    .accordion-footer {
+        padding: 10px 15px;
+        background-color: #f9f9f9;
+        text-align: right;
+        border-top: 1px solid #ddd;
+    }
+
+    .accordion-footer span {
+        color: #888;
+        font-size: 12px;
+    }
+    .reply{
+        display: flex;
+        gap: 30px;
+    }
+    .reply i{
+        font-size: 20px;
+    }
+
+    .button button{
+        padding: 8px;
+        border-radius: 50px;
+        border: none;
+    }
+   
+   
+</style>
+</html>
